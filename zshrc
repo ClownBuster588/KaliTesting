@@ -33,6 +33,7 @@ bindkey '^[[Z' undo                               # shift + tab undo last action
 
 # enable completion features
 autoload -Uz compinit
+autoload -U colors && colors
 compinit -d ~/.cache/zcompdump
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*' auto-description 'specify: %d'
